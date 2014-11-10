@@ -1,0 +1,11 @@
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
+
+# Documentation (Yuidoc)
+documentation
+
+# Web project files : .odt, .xls, uml ...
+project_files
