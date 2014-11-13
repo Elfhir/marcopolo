@@ -1,5 +1,7 @@
 'use strict';
 
+(function () {
+
 /**
  * @ngdoc overview
  * @name marcopoloApp
@@ -8,8 +10,7 @@
  *
  * Main module of the application.
  */
-angular
-  .module('marcopoloApp', [
+var marcopoloApp = angular.module('marcopoloApp', [
     'ngAnimate',
     'ngAria',
     'ngCookies',
@@ -17,23 +18,31 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
-  ])
+    'ngTouch',
+    'marcopoloApp.ui.navigation',
+    'marcopoloApp.home',
+    'marcopoloApp.voyages',
+    'marcopoloApp.about'
+  ]);
+
+marcopoloApp
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/home.html',
-        controller: 'MainCtrl'
+        controller: 'HomeCtrl'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
       .when('/voyages', {
-        templateUrl: 'views/vogages.html',
+        templateUrl: 'views/voyages.html',
         controller: 'VoyagesCtrl'
       })
       .otherwise({
         redirectTo: '/'
       });
   });
+
+})();

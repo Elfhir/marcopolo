@@ -21,20 +21,11 @@
 
     <!-- Add your site or application content here -->
     <div class="container">
-      <header class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">Marcopolo</h3>
-      </header>
+      <div ng-include="'views/partials/header.html'"></div>
 
-      <div ng-view=""></div>
+      <div ng-view></div>
 
-      <footer class="footer">
-        <p><span class="glyphicon glyphicon-copyright-mark"></span> 2014 Jérémy Ta Some Rights Reserved</p>
-      </footer>
+      <div ng-include="'views/partials/footer.html'"></div>
     </div>
 
 
@@ -74,8 +65,10 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/UI/navigation.js"></script>
+        <script src="scripts/controllers/home.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/voyages.js"></script>
         <!-- endbuild -->
 </body>
 </html>
