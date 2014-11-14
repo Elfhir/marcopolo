@@ -1,0 +1,16 @@
+Stylesheets follow the Scalable and Modular Architecture for CSS philosophy.
+SMACSS intends to improve your CSS organization, and can be reuse easily.
+
+https://smacss.com/
+
+We divided our Stylesheets (it's not a problem because SASS/Grunt etc ... will compile
+and minify a unique file for us at the end) in 5 sections :
+
+-	Base (normalize)
+-	Layout (margin, padding, width, height, display, visible ...)
+-	State (visible, display, all that deserve a state ; strongly associated with JS event
+	pseudo class, media queries.)
+-	Module (style that belongs to a special components : slider, accordeon, widget)
+-	Theme (background, color, font, and so on)
+
+
