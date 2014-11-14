@@ -1,9 +1,58 @@
 $icon-font-path: "../../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
-@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-.header {
-	color: #777;
-	border-top: 1px solid #e5e5e5;
+// bower:css
+@import "../../fonts/quadranta/style.css";
+@import "../../fonts/redressed/style.css";
+@import "../../fonts/artifika/style.css";
+// endbower
+
+// fonts
+$font-sans-serif : 'quadrantabold', Helvetica, Arial, sans-serif;
+$font-manuscript : 'redressedregular', Georgia, serif;
+$font-serif : 'artifikamedium', Times, serif;
+
+// colors
+$blue1 : #5599FF;
+$blue2 : #AACCFF;
+$blue3 : #D5E5FF;
+
+$grey1 : #4A4A4A;
+
+* {
+	font-family: $font-serif;
 }
+
+.mp-blue1 {
+	background-color: $blue1;
+}
+.mp-blue2 {
+	background-color: $blue2;
+}
+.mp-blue3 {
+	background-color: $blue3;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: $font-serif !important;
+}
+
+.mp-main-header {
+	color: $grey1;
+
+	.mp-main-header-logo {
+		font-family: $font-sans-serif;
+	}
+}
+
+.mp-carousel-title {
+	font-size: 5em;
+	font-family: $font-manuscript !important;
+	color: #ffffff !important;
+	text-shadow: 1px 0px 1px #000000;
+}
+
+

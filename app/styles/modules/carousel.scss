@@ -1,0 +1,20 @@
+/* Carousel using BS3 */
+
+.mp-carousel {
+	max-width: 100%;
+}
+
+.mp-carousel-title {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+
+	font-size: 5em;
+	color: #ffffff !important;
+	text-shadow: 1px 0px 1px #000000;
+}
+
+.mp-carousel-image {
+	position: relative;
+	width: 100%;
+}

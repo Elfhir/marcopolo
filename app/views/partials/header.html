@@ -1,8 +1,32 @@
-<header class="mp-ui header" ng-controller="NavigationCtrl">
-	<ul class="nav nav-pills pull-right">
-		<li ng-class="{ active: isActive('/')}"><a ng-href="#/">Accueil</a></li>
-		<li ng-class="{ active: isActive('/voyages')}"><a ng-href="#/voyages">Voyages</a></li>
-		<li ng-class="{ active: isActive('/about')}"><a ng-href="#/about">A propos</a></li>
-	</ul>
-	<h3 class="text-muted">Marcopolo</h3>
-</header>
+<div class="container mp-container mp-main-header">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<header class="mp-ui header" ng-controller="NavigationCtrl">
+			
+			<!-- Main navigation through pages application-->
+			<nav class="mp-main-nav navbar navbar-primary" role="navigation">
+				<ul class="nav navbar-nav nav-pills pull-right">
+					<li ng-class="{ active: isActive('/')}"><a ng-href="#/">Accueil</a></li>
+					<li ng-class="{ active: isActive('/voyages')}"><a ng-href="#/voyages">Voyages</a></li>
+					<li ng-class="{ active: isActive('/about')}"><a ng-href="#/about">A propos</a></li>
+				</ul>
+				<h1 class="mp-main-header-logo text-muted"><a ng-href="#/">Marcopolo</a></h1>
+			</nav>
+
+			<!-- Navigation on the home page only : scrolling nav landing page style -->
+			<nav class="mp-secondary-nav navbar navbar-default navbar-fixed-bottom" role="navigation">
+				<ul class="nav navbar-nav" role="tablist">
+					<li class="active">
+						<a href="#concept">L'idée de départ</a>
+					</li>
+					<li>
+						<a href="#realisation">Comment agir ?</a>
+					</li>
+					<li>
+						<a href="#register">Inscrivez vous !</a>
+					</li>
+				</ul>
+			</nav>
+
+		</header>
+	</div>	
+</div>

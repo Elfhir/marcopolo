@@ -1,61 +1,48 @@
+// Image licensing
+.mp-image-license-white, .mp-image-license-black {
+  position: relative;
+  top: -20px;
+  right: 0;
+}
 
+.mp-image-license-white a{
+  color: #fff;
+}
 
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.mp-image-license-black a{
+  color: #000;
 }
 
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
-}
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-}
-
+/* Responsive: Landscape tablets and pc screen*/
 @media screen and (min-width: 961px) {
-  .container {
+  .mp-container {
     max-width: 960px;
   }
 
-  /* Remove the padding we set earlier */
-  .header,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
+  .mp-main-header {
+    margin: 0 0 10px 0;
   }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
+
+  .mp-home-register {
+    position: relative;
+    bottom: 450px;
+    left: 45%;
   }
+
 }
 
 /* Responsive: Portrait tablets */
 @media screen and (min-width: 768px) and (max-width: 960px) {
-  .container {
+  .mp-container {
     max-width: 730px;
   }
 
-  /* Remove the padding we set earlier */
-  .header,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
+  .mp-home-register {
+    position: relative;
+    bottom: 450px;
+    left: 45%;
   }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
+
+
 }
