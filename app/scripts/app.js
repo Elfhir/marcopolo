@@ -19,6 +19,7 @@ var marcopoloApp = angular.module('marcopoloApp', [
     'ngRoute',
     'ngSanitize',
     'ngTouch',
+    'duScroll',
     'marcopoloApp.ui.navigation',
     'marcopoloApp.home',
     'marcopoloApp.voyages',

@@ -2,7 +2,7 @@
 
 (function() {
 
-	var app = angular.module('marcopoloApp.about', []);
+	var marcopoloApp = angular.module('marcopoloApp.about', []);
 
 	/**
 	 * @ngdoc function
@@ -12,7 +12,7 @@
 	 * Controller of the marcopoloApp that control
 	 * the About page
 	 */
-	app.controller('AboutCtrl', ['$scope', function ($scope) {
+	marcopoloApp.controller('AboutCtrl', ['$scope', function ($scope) {
 		$scope.cvURI = 'http://www.jeremy-ta.fr/cv/cv-JeremyTa.pdf';
 	}]);
 

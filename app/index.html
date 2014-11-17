@@ -1,83 +1,89 @@
 <!doctype html>
 <html class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <title>Marcopolo</title>
-    <meta name="description" content="Marcopolo est un site où l'on peut partager ses plus beaux voyages.">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/layouts/layout.css -->
-    <link rel="stylesheet" href="styles/layouts/layout.css">
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/states/browserhappy.css -->
-    <link rel="stylesheet" href="styles/states/browserhappy.css">
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/modules/carousel.css -->
-    <link rel="stylesheet" href="styles/modules/carousel.css">
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/themes/theme.css -->
-    <link rel="stylesheet" href="styles/themes/theme.css">
-    <!-- endbuild -->
-  </head>
-  <body data-spy="scroll" data-target=".mp-secondary-nav" ng-app="marcopoloApp">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<title>Marcopolo</title>
+	<meta name="description" content="Marcopolo est un site où l'on peut partager ses plus beaux voyages.">
+	<meta name="viewport" content="width=device-width">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<!-- build:css(.) styles/vendor.css -->
+	<!-- bower:css -->
+	<!-- endbower -->
+	<!-- endbuild -->
+	<!-- build:css(.tmp) styles/layouts/layout.css -->
+	<link rel="stylesheet" href="styles/layouts/layout.css">
+	<!-- endbuild -->
+	<!-- build:css(.tmp) styles/states/browserhappy.css -->
+	<link rel="stylesheet" href="styles/states/browserhappy.css">
+	<!-- endbuild -->
+	<!-- build:css(.tmp) styles/modules/carousel.css -->
+	<link rel="stylesheet" href="styles/modules/carousel.css">
+	<!-- endbuild -->
+	<!-- build:css(.tmp) styles/themes/theme.css -->
+	<link rel="stylesheet" href="styles/themes/theme.css">
+	<!-- endbuild -->
+	</head>
+	<body data-spy="scroll" data-target=".mp-secondary-nav" ng-app="marcopoloApp">
+	<!--[if lt IE 7]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
 
-    <!-- Add your site or application content here -->
-    <div class="mp-wrapper">
-      <div ng-include="'views/partials/header.html'"></div>
+	<!-- Add your site or application content here -->
+	<div class="mp-wrapper">
+		<div ng-include="'views/partials/header.html'"></div>
 
-      <div ng-view></div>
+		<div ng-view></div>
 
-      <div ng-include="'views/partials/footer.html'"></div>
-    </div>
+		<div ng-include="'views/partials/footer.html'"></div>
+	</div>
 
 
-    <!-- build:js(.) scripts/oldieshim.js -->
-    <!--[if lt IE 9]>
-    <script src="bower_components/es5-shim/es5-shim.js"></script>
-    <script src="bower_components/json3/lib/json3.js"></script>
-    <![endif]-->
-    <!-- endbuild -->
+	<!-- build:js(.) scripts/oldieshim.js -->
+	<!--[if lt IE 9]>
+	<script src="bower_components/es5-shim/es5-shim.js"></script>
+	<script src="bower_components/json3/lib/json3.js"></script>
+	<![endif]-->
+	<!-- endbuild -->
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-aria/angular-aria.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-messages/angular-messages.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+	<!-- build:js(.) scripts/vendor.js -->
+	<!-- bower:js -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+	<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+	<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+	<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+	<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+	<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+	<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+	<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+	<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+	<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+	<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+	<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+	<script src="bower_components/angular-animate/angular-animate.js"></script>
+	<script src="bower_components/angular-aria/angular-aria.js"></script>
+	<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+	<script src="bower_components/angular-messages/angular-messages.js"></script>
+	<script src="bower_components/angular-resource/angular-resource.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+	<script src="bower_components/angular-touch/angular-touch.js"></script>
+	<script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/UI/navigation.js"></script>
-        <script src="scripts/controllers/home.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/controllers/voyages.js"></script>
-        <!-- endbuild -->
+		<!-- build:js({.tmp,app}) scripts/scripts.js -->
+		<script src="scripts/app.js"></script>
+		<script src="scripts/controllers/UI/navigation.js"></script>
+		<script src="scripts/controllers/UI/anchorscroll.js"></script>
+		<script src="scripts/controllers/home.js"></script>
+		<script src="scripts/controllers/about.js"></script>
+		<script src="scripts/controllers/voyages.js"></script>
+		<!--script src="scripts/vendor/jquery.flipper.js"></script-->
+		<!-- endbuild -->
+
 </body>
 </html>
+
+
