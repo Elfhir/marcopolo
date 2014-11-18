@@ -13,36 +13,94 @@
   color: #000;
 }
 
-
-/* Responsive: Landscape tablets and pc screen*/
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 1200px) {
   .mp-container {
     max-width: 960px;
   }
 
   .mp-main-header {
     margin: 0 0 10px 0;
+
+    .mp-main-header-logo{
+      margin-right: 40px;
+    }
+
+    .mp-main-nav {
+      margin: 0;
+    }
   }
 
-  .mp-home-register-button {
+  .mp-home-register-action {
     position: relative;
-    bottom: 450px;
-    left: 45%;
+    bottom: 745px;
+    width: 500px;
+  }
+
+}
+
+/* Responsive: Landscape tablets and small pc screen*/
+@media screen and (min-width: 992px) and (max-width : 1199px){
+
+
+  .mp-container {
+    max-width: 960px;
+  }
+
+  .mp-main-header {
+    margin: 0 0 10px 0;
+
+    .mp-main-header-logo{
+      margin-right: 40px;
+    }
+  }
+
+  .mp-home-register-action {
+    position: relative;
+    bottom: 570px;
+    width: 500px;
   }
 
 }
 
 /* Responsive: Portrait tablets */
-@media screen and (min-width: 768px) and (max-width: 960px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .mp-container {
     max-width: 730px;
   }
 
-  .mp-home-register-button {
-    position: relative;
-    bottom: 450px;
-    left: 45%;
+  .mp-main-header {
+    margin: 0 0 10px 0;
+
+    .mp-main-header-logo{
+      margin-right: 40px;
+    }
   }
 
+  .mp-home-register-button {
+    position: relative;
+    bottom: 410px;
+    width: 480px;
+  }
+
+
+}
+
+/* Responsive: Smartphone */
+@media screen and (max-width: 767px) {
+  
+
+  .mp-main-header {
+    margin: 0 0 10px 0;
+
+    .mp-main-header-logo{
+      margin-right: 40px;
+    }
+  }
+
+  .mp-home-register-button {
+    position: relative;
+    bottom: 350px;
+    width: 480px;
+  }
 
 }
