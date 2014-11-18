@@ -14,7 +14,7 @@
 			</nav>
 
 			<!-- Navigation on the home page only : scrolling nav landing page style -->
-			<nav class="mp-secondary-nav navbar  navbar-fixed-bottom hidden-xs" role="navigation">
+			<nav ng-class="{hidden : !isActive('/')}" class="mp-secondary-nav navbar  navbar-fixed-bottom hidden-xs" role="navigation">
 				<ul class="nav navbar-nav" role="tablist">
 					<li class="active">
 						<a href="#menu" du-smooth-scroll>Menu</a>

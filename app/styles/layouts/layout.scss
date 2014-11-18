@@ -1,7 +1,7 @@
 // Image licensing
 .mp-image-license-white, .mp-image-license-black {
   position: relative;
-  top: -20px;
+  top: -30px;
   right: 0;
 }
 
@@ -34,6 +34,16 @@
     position: relative;
     bottom: 745px;
     width: 500px;
+  }
+
+  .mp-home-quote {
+    position: relative;
+    bottom: 150px;
+  }
+
+  .mp-main-footer {
+    position: relative;
+    bottom: 150px;
   }
 
 }
@@ -76,7 +86,7 @@
     }
   }
 
-  .mp-home-register-button {
+  .mp-home-register-action {
     position: relative;
     bottom: 410px;
     width: 480px;
@@ -97,7 +107,7 @@
     }
   }
 
-  .mp-home-register-button {
+  .mp-home-register-action {
     position: relative;
     bottom: 350px;
     width: 480px;
