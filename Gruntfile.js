@@ -167,8 +167,7 @@ module.exports = function (grunt) {
         ignorePath:  /\.\.\//
       },
       sass: {
-        src: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-        ignorePath: /(\.\.\/){1,2}bower_components\//
+        src: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}']
       }
     },
 
@@ -207,8 +206,8 @@ module.exports = function (grunt) {
         src: [
           '<%= yeoman.dist %>/scripts/{,*/}*.js',
           '<%= yeoman.dist %>/styles/{,*/}*.css',
-          '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-          '<%= yeoman.dist %>/styles/fonts/*'
+          // '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+          // '<%= yeoman.dist %>/fonts/{,*/}/*'
         ]
       }
     },
@@ -340,17 +339,17 @@ module.exports = function (grunt) {
             '.htaccess',
             '*.html',
             'views/{,*/}*.html',
-            'images/{,*/}*.{webp}',
+            'images/{,*/}*.*',
             'fonts/{,*/}*.*'
           ]
         }, {
           expand: true,
-          cwd: '.tmp/images',
-          dest: '<%= yeoman.dist %>/images',
-          src: ['generated/*']
+          cwd: '<%= yeoman.app %>/images',
+          src: '{,*/}*.*',
+          dest: '<%= yeoman.dist %>/images'
         }, {
           expand: true,
-          cwd: '.',
+          cwd: '<%= yeoman.app %>',
           src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
           dest: '<%= yeoman.dist %>'
         }]

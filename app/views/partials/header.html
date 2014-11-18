@@ -4,17 +4,27 @@
 			
 			<!-- Main navigation through pages application-->
 			<nav class="mp-main-nav navbar navbar-primary" role="navigation">
-				<ul class="nav navbar-nav nav-pills pull-right vert-offset-top-1">
-					<li ng-class="{ active: isActive('/')}"><a ng-href="#/">Accueil</a></li>
-					<li ng-class="{ active: isActive('/voyages')}"><a ng-href="#/voyages">Voyages</a></li>
-					<li ng-class="{ active: isActive('/about')}"><a ng-href="#/about">A propos</a></li>
-				</ul>
 				<img class="mp-main-header-logo pull-left vert-offset-top-1 hidden-xs" src="images/assets/logo/marcopolo_60.png" class="img-responsive" alt="Logo">
 				<h1 class="mp-main-header-title text-muted"><a ng-href="#/">Marcopolo</a></h1>
+				<ul class="mp-main-navbar-nav nav navbar-nav nav-pills nav-stacked vert-offset-top-1 pull-sm-right pull-md-right pull-lg-right">
+					<li class="text-center" ng-class="{ active: isActive('/')}"><a ng-href="#/">Accueil</a></li>
+					<li class="text-center" ng-class="{ active: isActive('/voyages')}"><a ng-href="#/voyages">Voyages</a></li>
+					<li class="text-center" ng-class="{ active: isActive('/about')}"><a ng-href="#/about">A propos</a></li>
+					<li class="text-center" ng-class="{ active: isActive('/users')}" class="dropdown navbar-primary">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" ng-click="preventDefault($event)">
+							Compte<span class="caret"></span>
+						</a>
+						<ul class="mp-main-header-dropdown dropdown-menu navbar-primary" role="menu">
+							<li><a href="#/users/connexion" title="Connexion">Connexion</a></li>
+							<li class="divider"></li>
+							<li><a href="#/users/register" title="Inscription">Inscription</a>
+						</ul>
+					</li>
+				</ul>
 			</nav>
 
 			<!-- Navigation on the home page only : scrolling nav landing page style -->
-			<nav ng-class="{hidden : !isActive('/')}" class="mp-secondary-nav navbar  navbar-fixed-bottom hidden-xs" role="navigation">
+			<nav ng-class="{hidden : !isActive('/')}" class="mp-secondary-nav navbar navbar-fixed-bottom hidden-xs" role="navigation">
 				<ul class="nav navbar-nav" role="tablist">
 					<li class="active">
 						<a href="#menu" du-smooth-scroll>Menu</a>
@@ -27,6 +37,11 @@
 					</li>
 					<li>
 						<a href="#register" du-smooth-scroll>Prenez votre sac !</a>
+					</li>
+					<li class="mp-secondary-nav-footer vert-offset-top-1">
+						<div class="row">
+							<p class="mp-secondary-nav-footer-copyright"><span class="glyphicon glyphicon-copyright-mark"></span> 2014 Jérémy Ta Some Rights Reserved</p>
+						</div>
 					</li>
 				</ul>
 			</nav>

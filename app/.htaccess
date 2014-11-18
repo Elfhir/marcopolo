@@ -17,7 +17,7 @@
 # http://enable-cors.org/
 
 # <IfModule mod_headers.c>
-#    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Origin "*"
 # </IfModule>
 
 # ------------------------------------------------------------------------------
@@ -175,6 +175,16 @@ ErrorDocument 404 /404.html
     AddType text/x-component                            htc
     AddType text/x-vcard                                vcf
 
+    AddType font/ttf .ttf
+    AddType font/eot .eot
+    AddType font/otf .otf
+    AddType font/woff .woff
+     
+    <FilesMatch "\.(ttf|otf|eot|woff)$">
+        <IfModule mod_headers.c>
+            Header set Access-Control-Allow-Origin "*"
+        </IfModule>
+    </FilesMatch>
 </IfModule>
 
 # ------------------------------------------------------------------------------

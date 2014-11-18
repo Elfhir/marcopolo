@@ -13,9 +13,21 @@
 	 * during navigation
 	 */
 	marcopoloApp.controller('NavigationCtrl', ['$scope', '$location', function ($scope, $location) {
-		$scope.isActive = function (viewLocation) { 
-	        return viewLocation === $location.path();
-	    };
+		
+		// returnt the url path
+		$scope.isActive = function (viewLocation) {
+			return viewLocation === $location.path();
+		};
+
+		// prevent navigation (anchor)
+		$scope.preventDefault = function(event) {
+			event.preventDefault();
+		};
+
+		$scope.$on('$destroy', function() {
+			console.log('NavigationCtrl is destroyed');
+		});
+
 	}]);
 
 })();

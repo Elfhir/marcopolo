@@ -23,7 +23,8 @@ var marcopoloApp = angular.module('marcopoloApp', [
     'marcopoloApp.ui.navigation',
     'marcopoloApp.home',
     'marcopoloApp.voyages',
-    'marcopoloApp.about'
+    'marcopoloApp.about',
+    'marcopoloApp.konamicode'
   ]);
 
 marcopoloApp
