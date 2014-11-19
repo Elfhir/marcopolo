@@ -26,7 +26,7 @@
 	<link rel="stylesheet" href="styles/themes/theme.css">
 	<!-- endbuild -->
 </head>
-<body data-spy="scroll" data-target=".mp-secondary-nav" ng-app="marcopoloApp" mp-konami-code>
+<body data-spy="scroll" data-target=".mp-secondary-nav" ng-app="marcopoloApp">
 	<!--[if lt IE 7]>
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
@@ -35,7 +35,7 @@
 		<div class="mp-wrapper">
 			<div ng-include="'views/partials/header.html'"></div>
 
-			<div ng-view></div>
+			<div ng-view mp-konami-code class="mp-view-global"></div>
 
 			<div ng-include="'views/partials/footer.html'"></div>
 		</div>
@@ -85,6 +85,7 @@
 	<script src="scripts/controllers/UI/navigation.js"></script>
 	<script src="scripts/controllers/UI/anchorscroll.js"></script>
 	<script src="scripts/directives/mpkonamicode.js"></script>
+	<script src="scripts/directives/autostartcarousel.js"></script>
 	<!-- endbuild -->
 
 </body>

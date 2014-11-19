@@ -24,7 +24,8 @@ var marcopoloApp = angular.module('marcopoloApp', [
     'marcopoloApp.home',
     'marcopoloApp.voyages',
     'marcopoloApp.about',
-    'marcopoloApp.konamicode'
+    'marcopoloApp.konamicode',
+    'marcopoloApp.autostartcarousel'
   ]);
 
 marcopoloApp

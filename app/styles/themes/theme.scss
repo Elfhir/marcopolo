@@ -127,11 +127,12 @@ h1, h2, h3, h4, h5, h6,
 .mp-main-header {
 	color: $grey1;
 
-	.mp-main-header-logo {
-		font-family: $font-sans-serif;
-		h1 a:hover {
-			text-decoration: none;
-			color: $blue1
+	.mp-main-header-title {
+		font-family: $font-sans-serif !important;
+
+		a:hover {
+			text-decoration: none !important;
+			color: $blue1 !important;
 		}
 	}
 
@@ -282,6 +283,36 @@ figcaption.mp-flip-back {
     opacity:0;
     -ms-transform:  rotateY(180deg) ;
   }
+}
+
+.mp-view-global.ng-enter {
+  transition: all 1s ease;
+  -webkit-transition:all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+   
+  opacity:0.5;
+  position:relative;
+  opacity:0;
+  top:-10px;
+}
+.mp-view-global.ng-enter {
+  opacity: 0;
+}
+.mp-view-global.ng-enter.ng-enter-active {
+  top:0;
+  left:0;
+  opacity: 1;
+}
+.mp-view-global.ng-leave.ng-leave-active{
+  top:5px;
+  left:5px;
+  opacity:1;
+}
+.mp-view-global.ng-leave{
+  top:0;
+  left:0;
+  opacity:0;
 }
 
 /* Responsive: Portrait tablets */
