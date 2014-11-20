@@ -23,9 +23,11 @@ var marcopoloApp = angular.module('marcopoloApp', [
     'marcopoloApp.ui.navigation',
     'marcopoloApp.home',
     'marcopoloApp.voyages',
+    'marcopoloApp.users',
     'marcopoloApp.about',
     'marcopoloApp.konamicode',
-    'marcopoloApp.autostartcarousel'
+    'marcopoloApp.autostartcarousel',
+    'marcopoloApp.users.issamepassword'
   ]);
 
 marcopoloApp
@@ -42,6 +44,18 @@ marcopoloApp
       .when('/voyages', {
         templateUrl: 'views/voyages.html',
         controller: 'VoyagesCtrl'
+      })
+      .when('/users', {
+        templateUrl: 'views/users.html',
+        controller: 'UsersCtrl'
+      })
+      .when('/users/register', {
+        templateUrl: 'views/register.html',
+        controller: 'RegisterCtrl'
+      })
+      .when('/users/connexion', {
+        templateUrl: 'views/connexion.html',
+        controller: 'ConnexionCtrl'
       })
       .otherwise({
         redirectTo: '/'

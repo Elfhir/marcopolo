@@ -57,7 +57,7 @@ $icon-font-path: "../../../bower_components/bootstrap-sass-official/assets/fonts
 
 
 // fonts
-$font-sans-serif : 'quadrantabold', Helvetica, Arial, sans-serif;
+$font-sans-serif : 'quadrantaregular', Helvetica, Arial, sans-serif;
 $font-manuscript : 'redressedregular', Georgia, serif;
 $font-serif : 'artifikamedium', Times, serif;
 
@@ -90,6 +90,16 @@ body, html {
 	background-color: $blue3;
 }
 
+.mp-blue1-font {
+	color: $blue1;
+}
+.mp-blue2-font {
+	color: $blue2;
+}
+.mp-blue3-font {
+	color: $blue3;
+}
+
 .mp-black-font {
 	color: $black1 !important;
 }
@@ -119,6 +129,22 @@ body, html {
 			box-shadow: inset 0 0 10px 10px rgba(0,0,0,0.5);
 }
 
+.mp-pattern1 {
+	background-image: url('../../images/assets/pattern/old_mathematics.png');
+}
+
+.mp-pattern2 {
+	background-image: url('../../images/assets/pattern/tiny_grid.png');
+}
+
+.mp-pattern3 {
+	background-image: url('../../images/assets/pattern/vertical_cloth.png');
+}
+
+.mp-pattern4 {
+	background-image: url('../../images/assets/pattern/navy_blue.png');
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: $font-serif !important;
@@ -130,7 +156,8 @@ h1, h2, h3, h4, h5, h6,
 	.mp-main-header-title {
 		font-family: $font-sans-serif !important;
 
-		a:hover {
+		a:hover, a, a:focus {
+			font-family: $font-sans-serif !important;
 			text-decoration: none !important;
 			color: $blue1 !important;
 		}
@@ -162,6 +189,16 @@ h1, h2, h3, h4, h5, h6,
 			        transition: all 0.25s linear !important;
 		}
 	}
+}
+
+.mp-form {
+	background-color: $grey1;
+	background-image: url('../../images/assets/pattern/tiny_grid.png');
+	-webkit-border-radius: 25px 25px 25px 25px;
+			border-radius: 25px 25px 25px 25px;
+	padding: 15px;
+	-webkit-box-shadow: 0 2px 10px 5px rgba(85,153,255,0.5);
+			box-shadow: 0 2px 10px 5px rgba(85,153,255,0.5);
 }
 
 .mp-carousel-title {

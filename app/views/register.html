@@ -1,0 +1,64 @@
+<div class="fluid-container mp-pattern4">
+	<div class="container">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-lg-offset-4">
+					<h2 class="mp-blue1-font">Inscription</h2>
+
+					<div class="panel panel-danger">
+						<div class="panel-heading">
+							<h3 class="panel-title">Démo</h3>
+						</div>
+						<div class="panel-body">
+							<p>
+								Ce site est une démo AngularJs ;
+								Il s'agit d'abord d'une démo Front-End, alors pour l'instant il n'y a pas de serveur,
+								aucun traitement des données.
+							</p>
+						</div>
+					</div>
+					
+					<div ng-app="marcopoloApp.users.issamepassword" class="mp-form-container vert-offset-bottom-6">
+						<form action="/#/users" method="GET" role="form" name="registerForm" novalidate>
+							<div class="form-group mp-form" ng-class="{'has-error': form.email.$dirty && form.email.$invalid, 'has-success': form.email.$dirty && !form.email.$invalid}">
+								<fieldset class="vert-offset-top-2">
+									<legend>Identité</legend>
+									<label class="vert-offset-top-1" for="Pseudo">Pseudo</label>
+									
+									<input name="Pseudo" ng-model="Pseudo" type="text" class="form-control" id="Pseudo" placeholder="Choisissez un pseudo" required>
+
+									<span ng-show="registerForm.Pseudo.$dirty && registerForm.Pseudo.$error.required" class="text-warning">Champs obligatoire</span>
+
+									<br>
+									<label class="vert-offset-top-1" for="Email">Email</label>
+									
+									<input name="Email" ng-model="Email" type="text" class="form-control" id="Email" placeholder="Tapez votre email" required>
+
+									
+									<span ng-show="registerForm.Email.$dirty && registerForm.Email.$error.required" class="text-danger">Champs obligatoire</span>
+									<span ng-show="registerForm.Email.$error.email" class="text-danger">L'email n'est pas correct</span>
+									
+									
+								</fieldset>
+								<fieldset class="vert-offset-top-3">
+									<legend>Choisissez votre mot de passe</legend>
+									<label class="vert-offset-top-1" for="Password">Mot de passe</label>
+									<input ng-model="Password" type="password" class="form-control" id="Password" name="Password" placeholder="Tapez votre mot de passe" ng-minlength="6" required>
+									<span class="text-danger" ng-show="registerForm.Password.$error.minlength">
+										Doit contenir au minimum 6 caractères
+									</span>
+									<label class="vert-offset-top-1" for="ConfirmPassword">Confirmation</label>
+									<input ng-model="ConfirmPassword" type="password" class="form-control vert-offset-top-1" id="ConfirmPassword" name="ConfirmPassword" placeholder="Tapez le même mot de passe" required is-same-password="registerForm.Password">
+									
+								</fieldset>					
+							</div>
+							<div class="form-group">
+								<input value="Valider" type="submit" class="pull-right btn btn-primary" ng-disabled="registerForm.$invalid"/>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
