@@ -1,0 +1,31 @@
+<div class="fluid-container mp-pattern1">
+	<div class="container vert-offset-top-5">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<h2>{{voyages.data[route.id].name}}</h2>
+				<h3>{{voyages.data[route.id].description}}</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<figure class="mp-photo-figure">
+					<img ng-src="{{voyages.data[route.id].gallery[1]}}" class="img-responsive" alt="Image">
+				</figure>
+				<br>
+				<p>
+					{{voyages.data[route.id].review}}
+				</p>
+
+				<div class="row vert-offset-bottom-4" >
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 vert-offset-top-2" ng-repeat="img in voyages.data[route.id].gallery">
+						<figure class="mp-photo-figure">
+							<img ng-src="{{img}}" class="mp-photo-thumbs img-responsive" alt="Image">
+						</figure>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>

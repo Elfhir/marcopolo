@@ -1,6 +1,6 @@
 {
   "name": "marcopolo",
-  "version": "0.8",
+  "version": "",
   "dependencies": {
     "angular": "^1.3.0",
     "json3": "^3.3.0",

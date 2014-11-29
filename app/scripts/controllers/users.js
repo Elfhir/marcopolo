@@ -12,9 +12,16 @@
 	 * Controller of the marcopoloApp
 	 * For basic users page
 	 */
-	marcopoloApp.controller('UsersCtrl', function ($scope) {
+	marcopoloApp.controller('UsersCtrl', ['$scope','$http', '$q','$routeParams', function ($scope, $http, $q, $routeParams) {
+		var users = $http.get('/data/users/2014.11.13.json');
+		var voyages = $http.get('/data/voyages/2014.11.13.json');
 
-	});
+		$q.all([users, voyages]).then(function(data, status, headers, config) { 
+			$scope.users = data[0];
+			$scope.voyages = data[1];
+			$scope.route = $routeParams;
+		});
+	}]);
 
 	/**
 	 * @ngdoc function

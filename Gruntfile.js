@@ -63,6 +63,15 @@ module.exports = function (grunt) {
       }
     },
 
+    // Php
+    // php: {
+    //     dist: {
+    //         options: {
+    //             port: 5000
+    //         }
+    //     }
+    // },
+
     // The actual grunt server settings
     connect: {
       options: {
@@ -386,6 +395,7 @@ module.exports = function (grunt) {
     }
   });
 
+  //grunt.registerTask('phpserver', ['php']);
 
   grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
     if (target === 'dist') {
@@ -393,6 +403,7 @@ module.exports = function (grunt) {
     }
 
     grunt.task.run([
+      //'phpserver',
       'clean:server',
       'wiredep',
       'concurrent:server',

@@ -9,15 +9,16 @@
 				<ul class="mp-main-navbar-nav nav navbar-nav nav-pills nav-stacked vert-offset-top-1 pull-sm-right pull-md-right pull-lg-right">
 					<li class="text-center" ng-class="{ active: isActive('/')}"><a ng-href="#/">Accueil</a></li>
 					<li class="text-center" ng-class="{ active: isActive('/voyages')}"><a ng-href="#/voyages">Voyages</a></li>
+					<li class="text-center" ng-class="{ active: isActive('/users/2')}"><a ng-href="#/users/2">Utilisateurs</a></li>
 					<li class="text-center" ng-class="{ active: isActive('/about')}"><a ng-href="#/about">A propos</a></li>
 					<li class="text-center" ng-class="{ active: isActive('/users')}" class="dropdown navbar-primary">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#" ng-click="preventDefault($event)">
 							Compte<span class="caret"></span>
 						</a>
 						<ul class="mp-main-header-dropdown dropdown-menu navbar-primary" role="menu">
-							<li><a href="#/users/connexion" title="Connexion">Connexion</a></li>
+							<li><a href="#/connexion" title="Connexion">Connexion</a></li>
 							<li class="divider"></li>
-							<li><a href="#/users/register" title="Inscription">Inscription</a>
+							<li><a href="#/register" title="Inscription">Inscription</a>
 						</ul>
 					</li>
 				</ul>

@@ -1,34 +1,74 @@
 [
     {
-        "id": "1",
+        "id": "0",
+        "user_id": [0,1,4,5,10],
         "name": "Saïgon by night",
         "description": "La grande métropole du sud du Viêt Nam est l'un des joyaux de l'Asie du Sud Est.\r\nEt à la tombée du jour, elle brille de mille feux ...",
         "review": "Saïgon est très vivante, de jour comme de nuit.\r\n\r\nSaigon, que l'on appelle encore Saigon car pour les Vietnamiens elle reste Saigon malgré le respect qu’ils vouent à Ho Chi Minh.\r\nCar son nom officiel est Hô Chi Minh Ville.\r\nElle a été le dernier bastion des forces non communistes en 1975.\r\n\r\nOn peut profiter le soir d'un Ca Phé Sua Da, d'un thé, d'un Sinh Tô. On peut manger quelques desserts sucrés (comme du Chê) !!",
-        "cover": "",
-        "gallery": ""
+        "cover": "images/assets/gallery/thumbs/saigon-00.jpg",
+        "gallery": ["images/assets/gallery/saigon-00.jpg","images/assets/gallery/saigon-02.jpg","images/assets/gallery/saigon-01.jpg"]
     },
     {
-        "id": "2",
+        "id": "1",
+        "user_id": [2,6],
         "name": "Cathédrale de Laon",
         "description": "Ce bâtiment religieux est situé sur le plateau de Laon, à une hauteur vertigineuse qui fait de l’œil au mon St Michel !",
         "review": "La cathédrale est en parfait état, et situé à une hauteur respectable.\r\nLa vieille ville trône en haut de ce plateau, où se côtoient boutiques, la cathédrale, une casemate ...\r\n\r\nIl faut profiter de la vue que l'on peut avoir au sommet de l'édifice (car oui, on peut y monter !!)\r\n\r\nOn peut facilement passer 1h30 à Laon pour les moins intéressés, et une après-midi entière ravira les personnes admirateurs d'architecture, de paysage et d'histoire !",
-        "cover": "",
-        "gallery": ""
+        "cover": "images/assets/gallery/thumbs/cathedrale-de-laon-00.jpg",
+        "gallery": ["images/assets/gallery/cathedrale-de-laon-02.jpg","images/assets/gallery/cathedrale-de-laon-01.jpg","images/assets/gallery/cathedrale-de-laon-00.jpg"]
+    },
+    {
+        "id": "2",
+        "user_id": [3,7,9],
+        "name": "Le jardin des plantes à Paris",
+        "description": "L'un des parcs les plus reposant de Paris, à deux pas de la Gare d'Austerlitz, à 30 min de St Michel et à l'abri du monde bruyant de Paris.",
+        "review": "Ce parc, situé non loin de la Gare d'Austerlitz, est l'un des plus grands de la capitale.\r\nMais c'est aussi selon moi, l'un des plus reposant.\r\nUne fois qu'on s'y promène, le bruit ambiant de circulation, la pollution de l'air semble s'évanouir.\r\n\r\nOn en profite pour respirer, pour découvrir les plantes du dit jardin ; en été, les enfants sont content de voir quelques grenouilles.\r\n\r\nD'ailleurs, le parc abrite aussi un muséum d'histoire botanique et des grandes serres abritant des espèces exotiques, mais également un zoo !\r\n\r\nL'entrée est payante, la ménagerie petite, mais il y a de quoi donner le sourire à quelques bambinos !\r\n\r\nEn été, il y a de quoi s'y promener pendant une bonne heure sans tenter les activités payantes, en prenant le temps de s'arrêter de temps en temps, de papoter tranquillement, sous des arbres centenaires.",
+        "cover": "images/assets/gallery/thumbs/jardin-des-plantes-00.jpg",
+        "gallery": ["images/assets/gallery/jardin-des-plantes-00.jpg","images/assets/gallery/jardin-des-plantes-01.jpg","images/assets/gallery/jardin-des-plantes-02.jpg"]
     },
     {
         "id": "3",
-        "name": "Le jardin des plantes à Paris",
-        "description": "L'un des parcs les plus reposant de Paris.",
-        "review": "Ce parc, situé non loin de la Gare d'Austerlitz, est l'un des plus grands de la capitale.\r\nMais c'est aussi selon moi, l'un des plus reposant.\r\nUne fois qu'on s'y promène, le bruit ambiant de circulation, la pollution de l'air semble s'évanouir.\r\n\r\nOn en profite pour respirer, pour découvrir les plantes du dit jardin ; en été, les enfants sont content de voir quelques grenouilles.\r\n\r\nD'ailleurs, le parc abrite aussi un muséum d'histoire botanique et des grandes serres abritant des espèces exotiques, mais également un zoo !\r\n\r\nL'entrée est payante, la ménagerie petite, mais il y a de quoi donner le sourire à quelques bambinos !\r\n\r\nEn été, il y a de quoi s'y promener pendant une bonne heure sans tenter les activités payantes, en prenant le temps de s'arrêter de temps en temps, de papoter tranquillement, sous des arbres centenaires.",
-        "cover": "",
-        "gallery": ""
-    },
-    {
-        "id": "4",
+        "user_id": [8],
         "name": "Planétarium de Reims",
         "description": "La tête dans les étoiles !\r\nPour les petits et grands, un lieu de science que tout Rémois devrait visiter un jour ^^",
         "review": "(Tiré de http://sortirareims.fr/ponctuel.html)\r\n\r\nDepuis le 07 septembre 2013 le planétarium a rouvert ses portes après 18 mois de travaux. \r\n\r\nExpositions et observations du ciel seront au rendez-vous pour vous faire voyager toujours plus loin ! Et pour les fêtes de noël, des événements seront organisés jusqu'au 20 décembre: entre séance d'initiation à l'astronomie et visite de l'univers, les amateurs d'astronomie seront ravis !\r\n\r\nTarifs : 6 euros pour les adultes, 3 euros pour les moins de 18 ans et étudiants et gratuits pour les demandeurs d'emploi. Réservation indispensable au 03.26.35.34.70.",
-        "cover": "",
-        "gallery": ""
+        "cover": "images/assets/gallery/thumbs/planetarium-de-reims-00.jpg",
+        "gallery": ["images/assets/gallery/planetarium-de-reims-00.jpg","images/assets/gallery/planetarium-de-reims-01.jpg"]
+    },
+    {
+        "id": "4",
+        "user_id": [11],
+        "name": "La Sagrada Familia",
+        "description": "L'église de Gaudi : un chef d'oeuvre démesuré. Attention, étonnement garanti !",
+        "review": "(Extrait de Wikipédia) La Sagrada Família, Temple Expiatori de la Sagrada Família de son nom complet en catalan, ou Templo Expiatorio de la Sagrada Familia en espagnol (en français : « temple expiatoire de la Sainte Famille »), est une basilique mineure1 catholique de Barcelone érigée à partir de 1882. C’est l’un des exemples les plus connus du modernisme catalan et un monument emblématique de la ville. Œuvre inachevée de l’architecte catalan Antoni Gaudí, la Sagrada Família est située dans le quartier du même nom (district de l’Eixample). L’architecte a conçu une minutieuse symbologie qui fait de cet édifice un poème mystique. Il a également fait preuve de grandes audaces de construction formelle, telles la manière de concevoir la structure d’arc paraboliquenote 1 ou la combinaison des traitements sculpturaux naturalistes et de l’abstraction des tours. Selon les données de l’année 2004, la Sagrada Família est le monument le plus visité d’Espagne, dépassant l’Alhambra de Grenade et le musée du Prado à Madrid2 : en 2008, elle a attiré plus de 2,7 millions de visiteurs3. L’œuvre réalisée du vivant d’Antoni Gaudí, la crypte et la façade de la Nativité, a été déclarée patrimoine de l’humanité par l’Unesco en 20054.",
+        "cover": "images/assets/gallery/thumbs/sagrada-familia-00.jpg",
+        "gallery": ["images/assets/gallery/sagrada-familia-00.jpg","images/assets/gallery/sagrada-familia-01.jpg","images/assets/gallery/sagrada-familia-02.jpg"]
+    },
+    {
+        "id": "5",
+        "user_id": [12],
+        "name": "Parc Guëll",
+        "description": "Retirez vous de la côte et prenez de la hauteur au Parc Guëll ; Entrée payante",
+        "review": "(Extrait de Wikipédia) : Le parc Güell est l'une des réalisations de l'architecte catalan Antoni Gaudí à Barcelone qui figure sur la liste du patrimoine mondial de l'UNESCO. Il fut édifié entre 1900 et 1914. Les architectes José Antonio Martínez Lapeña et Elías Torres l'ont restauré de 1984 à 1993. Cette restauration a donné lieu à des polémiques notamment concernant l'habillage en céramique du banc de forme ondulée de la terrasse du Parc Güell.",
+        "cover": "images/assets/gallery/thumbs/parc-guell-00.jpg",
+        "gallery": ["images/assets/gallery/parc-guell-00.jpg","images/assets/gallery/parc-guell-01.jpg","images/assets/gallery/parc-guell-02.jpg"]
+    },
+    {
+        "id": "6",
+        "user_id": [13],
+        "name": "Gruyères",
+        "description": "Village médieval en Suisse : château et fromages, pour petits et grands !",
+        "review": "(Extrait de Wikipédia) : Au pied des Préalpes, le bourg médiéval de Gruyères, sacré le plus beau village de Suisse romande 2014, possède un charme et une architecture pittoresque. Le fameux fromage doit son nom à cette cité préservée du temps. Il faut voir son château, ses rues ... et son musée d'arts modernes, avec des Aliens ! ",
+        "cover": "images/assets/gallery/thumbs/gruyeres-00.jpg",
+        "gallery": ["images/assets/gallery/gruyeres-00.jpg","images/assets/gallery/gruyeres-01.jpg","images/assets/gallery/gruyeres-02.jpg"]
+    },
+    {
+        "id": "7",
+        "user_id": [12,13],
+        "name": "L'Escala",
+        "description": "A la frontière Espagnole, se trouve un station balnéaire charmante et familiale",
+        "review": "L'Escala est un des principaux centres touristiques de la Costa Brava. Ce ne sont pas les raisons qui manquent. Le cadre ne pourrait en effet être plus approprié et varié, du massif du Montgrí aux marais de l'Empordà, en passant par les plages, grandes et petites, et les criques situées entre les falaises rocheuses. Les activités sont également des plus diverses : rencontres de sardanes, habaneras, fête de l’Anchois, Journées gastronomiques du Suquet de poisson, etc. Sans oublier les sports, comme le VTT, les randonnées pédestres et la plongée sous-marine, entre autres. Côté culturel, que pensez-vous d’une visite du site archéologique gréco-romain des ruines d'Empúries ? L'Escala est une ville maritime pleine de vie. Vivez-la dans toute sa splendeur !",
+        "cover": "images/assets/gallery/thumbs/escala-00.jpg",
+        "gallery": ["images/assets/gallery/escala-00.jpg","images/assets/gallery/escala-01.jpg","images/assets/gallery/escala-02.jpg"]
     }
 ]

@@ -13,6 +13,34 @@
   color: #000;
 }
 
+.mp-photo-figure {
+  max-width: 800px;
+  padding: 5px;
+  background: #ffffff;
+  -webkit-border-radius: 5px 5px 5px 5px;
+          border-radius: 5px 5px 5px 5px;
+  -webkit-box-shadow: 0 0 5px 5px rgba(0,0,0,0.4);
+          box-shadow: 0 0 5px 5px rgba(0,0,0,0.4);
+}
+
+.mp-photo-figure a {
+  width: 350px;
+}
+
+.mp-photo-thumbs:hover, .mp-photo-thumbs:focus, .mp-photo-thumbs:active {
+  background: rgba(0,0,0,0.5);
+}
+
+.mp-photo-thumbs {
+  margin: auto;
+}
+
+.mp-photo-description, .mp-photo-title {
+  margin: 4px auto;
+  text-align: center;
+}
+
+
 @media screen and (min-width: 1200px) {
   .mp-container {
     max-width: 960px;

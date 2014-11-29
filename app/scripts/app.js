@@ -45,15 +45,23 @@ marcopoloApp
         templateUrl: 'views/voyages.html',
         controller: 'VoyagesCtrl'
       })
+      .when('/voyages/:id', {
+        templateUrl: 'views/voyage.html',
+        controller: 'VoyageCtrl'
+      })
       .when('/users', {
         templateUrl: 'views/users.html',
         controller: 'UsersCtrl'
       })
-      .when('/users/register', {
+      .when('/users/:id', {
+        templateUrl: 'views/users.html',
+        controller: 'UsersCtrl'
+      })
+      .when('/register', {
         templateUrl: 'views/register.html',
         controller: 'RegisterCtrl'
       })
-      .when('/users/connexion', {
+      .when('/connexion', {
         templateUrl: 'views/connexion.html',
         controller: 'ConnexionCtrl'
       })
