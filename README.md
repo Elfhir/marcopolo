@@ -65,7 +65,7 @@ Artistic 2.0
 **Free Software, Hell Yeah!**
 
 [Yeoman]:http://yeoman.io
-[Grunt]:htp://gruntjs.com
+[Grunt]:http://gruntjs.com
 [Bower]:http://bower.io
 [node.js]:http://nodejs.org
 [Twitter Bootstrap]:http://twitter.github.com/bootstrap/

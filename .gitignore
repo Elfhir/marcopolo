@@ -4,8 +4,8 @@ dist
 .sass-cache
 bower_components
 
-# Documentation (Yuidoc)
+# Documentation (Yuidoc) (later ...)
 documentation
 
-# Web project files : .odt, .xls, uml ...
+# Web project files : .odt, .xls, uml ... images
 project_files
