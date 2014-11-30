@@ -50,8 +50,6 @@ $ grunt serve
 
 ### Todo's
 
-- Code for Users page and Voyages
-- Code the php part for users (register, comment, https)
 - Add documentation beside
 - Add Code Comments
 - Write Tests
