@@ -1,7 +1,7 @@
 # Marcopolo
 
 Projet AngularJS, à titre de démonstration.
-L'idée du site était de proposer une galerie, un résau social de partage de sorties, d'expériences de voyages.
+L'idée du site était de proposer une galerie, un réseau social de partage de sorties, d'expériences de voyages.
 
 Le site est disponible à cette adresse :
 http://marcopolo.jeremy-ta.fr/
@@ -48,11 +48,6 @@ Référez vous à la doc du generator angular de yeoman
 $ grunt serve
 ```
 
-### Todo's
-
-- Add documentation beside
-- Add Code Comments
-- Write Tests
 
 License
 ----
